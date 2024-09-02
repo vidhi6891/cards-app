@@ -9,6 +9,8 @@ const Card = ({ cardDetails, onEditDetails }) => {
     const [dob, setDOB] = useState(cardDetails.dob || "");
     const [error, setError] = useState(false);
 
+    console.log(`render card ${cardDetails.id}`)
+
     const handleChange = (e) => {
         setError(false);
         switch(e.target.name) {
